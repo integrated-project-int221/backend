@@ -1,8 +1,8 @@
-name: Docker build image
+name: Docker build image backend
 on:
   push:
     branches:
-      - backend
+      - master
 jobs:
   build:
     runs-on: ubuntu-20.04
