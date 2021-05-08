@@ -9,7 +9,6 @@ services:
     depends_on:
       - mysqldb
 
-servives:
   frontend:
     image: ghcr.io/integrated-project-int221/frontend:master
     ports:
