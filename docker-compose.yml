@@ -4,8 +4,8 @@ services:
     image: ghcr.io/integrated-project-int221/backend:master
     ports:
        - "3000:8080"
-    networks:
-      - myproduct-network
+#    networks:
+#      - database_myproduct-network
 
 
   frontend:
@@ -14,8 +14,10 @@ services:
       - "8081:8080"
     depends_on:
       backend:
-    networks:
-      - myproduct-network
+#    networks:
+#      - database_myproduct-network
 
 networks:
-  myproduct-network:
+  default:
+    external:
+      name: database_myproduct-network
