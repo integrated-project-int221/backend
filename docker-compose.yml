@@ -12,15 +12,11 @@ services:
   frontend:
     image: ghcr.io/integrated-project-int221/frontend:master
     ports:
-      - "8081:8080"
-
-  mysqldb:
-    image: mysql/mysql-server:8.0.23
+      - "8080:8080"
     networks:
       - myproduct-network
-    environment:
-      - MYSQL_ROOT_PASSWORD=Myspa62130500066
-      - MYSQL_DATABASE = myproduct
+
+
 
 networks:
   myproduct-network:
