@@ -8,5 +8,14 @@ services:
       - myproduct-network
 
 
+  frontend:
+    image: ghcr.io/integrated-project-int221/frontend:master
+    ports:
+      - "8081:8080"
+    depends_on:
+      backend:
+    networks:
+      - myproduct-network
+
 networks:
   myproduct-network:
