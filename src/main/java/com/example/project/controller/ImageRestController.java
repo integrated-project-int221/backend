@@ -90,7 +90,7 @@ public class ImageRestController {
         oldImageName.renameTo(new File(FILE_DIRECTORY + newImageName));
           productRepositories.findById(id).map(products -> {
               products.setImageName(newImageName);
-              products.setProdName(productName);
+//              products.setProdName(productName);  ไม่ต้องใส่ เพรามีที่ product
               return productRepositories.save(products);
           });
         return new ResponseEntity<>("File Image Name Change complete", HttpStatus.OK);

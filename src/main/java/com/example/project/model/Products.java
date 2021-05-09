@@ -7,7 +7,7 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import javax.persistence.*;
-import java.time.LocalDate;
+import java.sql.Date;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -42,7 +42,7 @@ public class Products {
 
 
     @Column(name = "prodmanufactured")
-    private LocalDate prodManufactured;
+    private Date prodManufactured;
 
     @Column(name = "imagename")
     private String imageName;
