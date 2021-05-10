@@ -58,7 +58,6 @@ public class ImageRestController {
         }catch (EOFException e){
             return new ResponseEntity<>("File upload fail", HttpStatus.BAD_REQUEST);
         }
-
     }
 
     @DeleteMapping("/delete/{filename:.+}")
@@ -70,7 +69,6 @@ public class ImageRestController {
         }catch (Exception e){
             return new ResponseEntity<>("File Delete fail", HttpStatus.BAD_REQUEST);
         }
-
     }
 
     @PutMapping("/updatename/{id}/{productname}")
