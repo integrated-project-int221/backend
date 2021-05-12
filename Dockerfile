@@ -1,6 +1,3 @@
-#From openjdk:14
-#copy ./target/spa.project-0.0.1-SNAPSHOT.jar spa.project-0.0.1-SNAPSHOT.jar
-#CMD ["java","-jar","spa.project-0.0.1-SNAPSHOT.jar"]
 
 ### STAGE 1: Build ###
 FROM maven:3.6.3-openjdk-14-slim AS build
